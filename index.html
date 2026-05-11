@@ -6,6 +6,9 @@
         <meta name="description" content="Sklep Jeans'u w Częstochowie. Jeansy damskie i męskie, kurtki jeansowe, spodnie, bluzy, koszule i odzież codzienna. Sprawdź lokalizacje i skontaktuj się z nami.">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
+        <link rel="icon" type="image/png" href="images/logo-emblem.png">
+        <link rel="apple-touch-icon" href="images/logo-emblem.png">
+
         <!-- Canonical -->
         <link rel="canonical" href="https://sklepjeans.pl/" />
 
@@ -27,8 +30,13 @@
         <meta name="twitter:image" content="https://sklepjeans.pl/images/kolekcja-jeansy.png">
 
         <link rel="stylesheet" href="assets/css/main.css" />
-        <!-- Font Awesome CDN (stable 6.5.1) -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+              integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+              crossorigin="anonymous"
+              referrerpolicy="no-referrer">
 
         <!-- JSON-LD Structured Data -->
         <script type="application/ld+json">
@@ -40,16 +48,37 @@
             "url": "https://sklepjeans.pl/",
             "image": "https://sklepjeans.pl/images/kolekcja-jeansy.png",
             "description": "Sklep Jeans'u w Częstochowie oferuje jeansy damskie i męskie, kurtki jeansowe, spodnie, bluzy, koszule i odzież casualową w przystępnych cenach.",
+            "email": "tomaz.ciura037@gmail.com",
+            "telephone": "+48 601 505 037",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Częstochowa",
                 "addressCountry": "PL"
             },
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday"
+                    ],
+                    "opens": "10:00",
+                    "closes": "17:00"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Saturday",
+                    "opens": "10:00",
+                    "closes": "14:00"
+                }
+            ],
             "sameAs": [
                 "https://www.facebook.com/hurtowniajeansu/",
                 "https://share.google/akD8zO9l8JUTnjCDz"
             ],
-            "email": "kontakt@sklepjeans.pl",
             "department": [
                 {
                     "@type": "ClothingStore",
@@ -77,6 +106,7 @@
         }
         </script>
     </head>
+
     <body class="is-preload">
 
         <!-- Sidebar Header -->
@@ -90,15 +120,39 @@
                     <p>Jeansy i Odzież</p>
                 </div>
 
-                <!-- Nav -->
+                <!-- Navigation -->
                 <nav id="nav" aria-label="Nawigacja główna">
                     <ul>
-                        <li><a href="#top"          id="top-link"          ><span class="icon solid fa-home">Główna</span></a></li>
-                        <li><a href="#quick-contact" id="quick-contact-link"><span class="icon solid fa-phone">Kontakt</span></a></li>
-                        <li><a href="#offer"         id="offer-link"        ><span class="icon solid fa-th">Oferta</span></a></li>
-                        <li><a href="#locations"     id="locations-link"    ><span class="icon solid fa-location-dot">Lokalizacje</span></a></li>
-                        <li><a href="#facebook"      id="facebook-link"     ><span class="icon brands fa-facebook-f">Facebook</span></a></li>
-                        <li><a href="gallery.html"                          ><span class="icon solid fa-images">Galeria</span></a></li>
+                        <li>
+                            <a href="#top" id="top-link">
+                                <span class="icon solid fa-home">Główna</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#quick-contact" id="quick-contact-link">
+                                <span class="icon solid fa-phone">Kontakt</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#offer" id="offer-link">
+                                <span class="icon solid fa-th">Oferta</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#locations" id="locations-link">
+                                <span class="icon solid fa-location-dot">Lokalizacje</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#facebook" id="facebook-link">
+                                <span class="icon brands fa-facebook-f">Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">
+                                <span class="icon solid fa-images">Galeria</span>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -106,9 +160,28 @@
             <div class="bottom">
                 <!-- Social Icons -->
                 <ul class="icons">
-                    <li><a href="https://www.facebook.com/hurtowniajeansu/" target="_blank" rel="noopener noreferrer" class="icon brands fa-facebook-f"><span class="label">Facebook Sklep Jeans'u</span></a></li>
-                    <li><a href="https://share.google/akD8zO9l8JUTnjCDz" target="_blank" rel="noopener noreferrer" class="icon brands fa-google"><span class="label">Profil Google Sklep Jeans'u</span></a></li>
-                    <li><a href="mailto:kontakt@sklepjeans.pl" class="icon solid fa-envelope"><span class="label">Email kontakt@sklepjeans.pl</span></a></li>
+                    <li>
+                        <a href="https://www.facebook.com/hurtowniajeansu/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="icon brands fa-facebook-f">
+                            <span class="label">Facebook Sklep Jeans'u</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://share.google/akD8zO9l8JUTnjCDz"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="icon brands fa-google">
+                            <span class="label">Profil Google Sklep Jeans'u</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:tomaz.ciura037@gmail.com"
+                           class="icon solid fa-envelope">
+                            <span class="label">Email tomaz.ciura037@gmail.com</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -122,13 +195,18 @@
             <section id="top" class="one dark cover">
                 <div class="container">
                     <header>
-                        <h2 class="alt hero-heading"><strong>Sklep Jeans'u</strong></h2>
-                        <p class="hero-subtitle">Jeansy, kurtki i odzież codzienna — Częstochowa</p>
+                        <h2 class="alt hero-heading">
+                            <strong>Sklep Jeans'u</strong>
+                        </h2>
+                        <p class="hero-subtitle">
+                            Jeansy, kurtki i odzież codzienna — Częstochowa
+                        </p>
                         <p class="hero-text">
                             Dwie lokalizacje w Częstochowie. Jeansy damskie i męskie,<br>
                             kurtki jeansowe oraz odzież casualowa w przystępnych cenach.
                         </p>
                     </header>
+
                     <footer class="hero-actions">
                         <a href="#quick-contact" class="button scrolly">
                             <i class="fas fa-phone" aria-hidden="true"></i> Kontakt i lokalizacja
@@ -148,9 +226,10 @@
                     <header>
                         <h2>Odwiedź nas lub skontaktuj się</h2>
                     </header>
+
                     <p class="quick-contact-intro">
                         Szukasz <strong>jeansów, kurtek jeansowych lub odzieży codziennej w Częstochowie</strong>?
-                        Skontaktuj się z nami albo sprawdź lokalizację sklepu.
+                        Zadzwoń, napisz lub odwiedź jedną z naszych dwóch lokalizacji.
                     </p>
 
                     <div class="quick-contact-grid">
@@ -161,8 +240,10 @@
                                 <i class="fas fa-phone" aria-hidden="true"></i>
                             </div>
                             <h3>Telefon</h3>
-                            <p class="qc-value qc-placeholder">do uzupełnienia</p>
-                            <p class="qc-note">Numer telefonu zostanie wkrótce uzupełniony.</p>
+                            <a href="tel:+48601505037" class="qc-value">+48 601 505 037</a>
+                            <a href="tel:+48601505037" class="button qc-btn">
+                                <i class="fas fa-phone" aria-hidden="true"></i> Zadzwoń
+                            </a>
                         </div>
 
                         <!-- Email -->
@@ -171,9 +252,9 @@
                                 <i class="fas fa-envelope" aria-hidden="true"></i>
                             </div>
                             <h3>E-mail</h3>
-                            <a href="mailto:kontakt@sklepjeans.pl" class="qc-value">kontakt@sklepjeans.pl</a>
-                            <a href="mailto:kontakt@sklepjeans.pl" class="button qc-btn">
-                                Napisz e-mail
+                            <a href="mailto:tomaz.ciura037@gmail.com" class="qc-value">tomaz.ciura037@gmail.com</a>
+                            <a href="mailto:tomaz.ciura037@gmail.com" class="button qc-btn">
+                                <i class="fas fa-envelope" aria-hidden="true"></i> Napisz e-mail
                             </a>
                         </div>
 
@@ -182,53 +263,49 @@
                             <div class="qc-icon">
                                 <i class="fas fa-location-dot" aria-hidden="true"></i>
                             </div>
-                            <h3>Główna lokalizacja</h3>
-                            <p class="qc-value">Hurtownia Jeansu<br><span class="qc-city">Częstochowa</span></p>
+                            <h3>Hurtownia Jeansu</h3>
+                            <p class="qc-value">
+                                Główna lokalizacja<br>
+                                <span class="qc-city">Częstochowa</span>
+                            </p>
                             <a href="https://www.google.com/maps/place/Hurtownia+Jeansu/@50.8270916,19.1143981,17z/data=!3m1!4b1!4m6!3m5!1s0x4710b5e96d8eb21f:0x42c5e5815fc4b1a2!8m2!3d50.8270916!4d19.1169784!16s%2Fg%2F11gjjgtrjj?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D"
-                               target="_blank" rel="noopener noreferrer" class="button qc-btn">
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="button qc-btn">
                                 <i class="fas fa-map" aria-hidden="true"></i> Otwórz w Google Maps
                             </a>
                         </div>
 
-                        <!-- Facebook -->
-                        <div class="quick-contact-card">
-                            <div class="qc-icon qc-icon-fb">
-                                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        <!-- Second location -->
+                        <div class="quick-contact-card contact-primary-card">
+                            <div class="qc-icon">
+                                <i class="fas fa-location-dot" aria-hidden="true"></i>
                             </div>
-                            <h3>Facebook</h3>
-                            <p class="qc-value">Aktualności, nowe dostawy i promocje</p>
-                            <a href="https://www.facebook.com/hurtowniajeansu/"
-                               target="_blank" rel="noopener noreferrer" class="button qc-btn">
-                                <i class="fab fa-facebook-f" aria-hidden="true"></i> Aktualności na Facebooku
+                            <h3>Sklep w Pasażu Sezam</h3>
+                            <p class="qc-value">
+                                Druga lokalizacja<br>
+                                <span class="qc-city">Częstochowa</span>
+                            </p>
+                            <a href="https://maps.app.goo.gl/L9MAArUFNyQHT8ze9"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="button qc-btn">
+                                <i class="fas fa-map" aria-hidden="true"></i> Otwórz w Google Maps
                             </a>
                         </div>
 
                     </div>
 
-                    <!-- Embedded Google Map (lazy-loaded, with direct link always visible) -->
-                    <div class="qc-map-wrapper">
-                        <p class="qc-map-label">
-                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                            Hurtownia Jeansu — Częstochowa
-                            <a href="https://www.google.com/maps/place/Hurtownia+Jeansu/@50.8270916,19.1143981,17z/data=!3m1!4b1!4m6!3m5!1s0x4710b5e96d8eb21f:0x42c5e5815fc4b1a2!8m2!3d50.8270916!4d19.1169784!16s%2Fg%2F11gjjgtrjj?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D"
-                               target="_blank" rel="noopener noreferrer" class="qc-map-direct-link">
-                                Otwórz w Google Maps &rarr;
-                            </a>
-                        </p>
-                        <div class="qc-map-frame">
-                            <iframe
-                                title="Mapa lokalizacji Hurtownia Jeansu Częstochowa"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2480.6879!2d19.1143981!3d50.8270916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4710b5e96d8eb21f%3A0x42c5e5815fc4b1a2!2sHurtownia%20Jeansu!5e0!3m2!1spl!2spl!4v1715431200000"
-                                width="100%"
-                                height="320"
-                                style="border:0;"
-                                allowfullscreen=""
-                                loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
+                    <div class="opening-hours-highlight">
+                        <div class="opening-hours-icon">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                        </div>
+                        <div class="opening-hours-text">
+                            <strong>Godziny otwarcia</strong>
+                            <span>pon.–pt. 10:00–17:00</span>
+                            <span>sob. 10:00–14:00</span>
                         </div>
                     </div>
-
                 </div>
             </section>
 
@@ -240,18 +317,26 @@
                     <header>
                         <h2>Oferta</h2>
                     </header>
-                    <p>W naszym <strong>sklepie jeans w Częstochowie</strong> znajdziesz szeroki wybór jeansów damskich i męskich, kurtek jeansowych oraz odzieży casualowej w atrakcyjnych cenach. Stawiamy na sprawdzone marki i trwałe materiały — moda, która służy latami.</p>
 
-                    <!-- Featured image -->
+                    <p>
+                        W naszym <strong>sklepie jeans w Częstochowie</strong> znajdziesz szeroki wybór jeansów damskich
+                        i męskich, kurtek jeansowych oraz odzieży casualowej w atrakcyjnych cenach. Stawiamy na
+                        sprawdzone marki i trwałe materiały — moda, która służy latami.
+                    </p>
+
                     <div class="offer-featured-image">
-                        <img src="images/kolekcja-jeansy.png" alt="Kolekcja jeansów damskich i męskich oraz odzieży casualowej — Sklep Jeans'u Częstochowa" loading="lazy">
+                        <img src="images/kolekcja-jeansy.png"
+                             alt="Kolekcja jeansów damskich i męskich oraz odzieży casualowej — Sklep Jeans'u Częstochowa"
+                             loading="lazy">
                     </div>
 
                     <div class="row">
                         <div class="col-4 col-12-mobile">
                             <a href="oferta/jeansy-damskie.html" class="item product-card product-card-link">
                                 <div class="product-card-image">
-                                    <img src="images/categories/jeansy-damskie-01.png" alt="Jeansy damskie Sklep Jeans'u" loading="lazy">
+                                    <img src="images/categories/jeansy-damskie-01.png"
+                                         alt="Jeansy damskie Sklep Jeans'u"
+                                         loading="lazy">
                                 </div>
                                 <div class="product-card-content">
                                     <h3>Jeansy damskie</h3>
@@ -259,10 +344,13 @@
                                 </div>
                             </a>
                         </div>
+
                         <div class="col-4 col-12-mobile">
                             <a href="oferta/jeansy-meskie.html" class="item product-card product-card-link">
                                 <div class="product-card-image">
-                                    <img src="images/categories/jeansy-meskie-01.png" alt="Jeansy męskie Sklep Jeans'u" loading="lazy">
+                                    <img src="images/categories/jeansy-meskie-01.png"
+                                         alt="Jeansy męskie Sklep Jeans'u"
+                                         loading="lazy">
                                 </div>
                                 <div class="product-card-content">
                                     <h3>Jeansy męskie</h3>
@@ -270,10 +358,13 @@
                                 </div>
                             </a>
                         </div>
+
                         <div class="col-4 col-12-mobile">
                             <a href="oferta/kurtki-jeansowe.html" class="item product-card product-card-link">
                                 <div class="product-card-image">
-                                    <img src="images/categories/kurtki-jeansowe-01.png" alt="Kurtki jeansowe Sklep Jeans'u" loading="lazy">
+                                    <img src="images/categories/kurtki-jeansowe-01.png"
+                                         alt="Kurtki jeansowe Sklep Jeans'u"
+                                         loading="lazy">
                                 </div>
                                 <div class="product-card-content">
                                     <h3>Kurtki jeansowe</h3>
@@ -281,10 +372,13 @@
                                 </div>
                             </a>
                         </div>
+
                         <div class="col-4 col-12-mobile">
                             <a href="oferta/spodnie.html" class="item product-card product-card-link">
                                 <div class="product-card-image">
-                                    <img src="images/categories/spodnie-01.png" alt="Spodnie Sklep Jeans'u" loading="lazy">
+                                    <img src="images/categories/spodnie-01.png"
+                                         alt="Spodnie Sklep Jeans'u"
+                                         loading="lazy">
                                 </div>
                                 <div class="product-card-content">
                                     <h3>Spodnie</h3>
@@ -292,10 +386,13 @@
                                 </div>
                             </a>
                         </div>
+
                         <div class="col-4 col-12-mobile">
                             <a href="oferta/bluzy-koszule.html" class="item product-card product-card-link">
                                 <div class="product-card-image">
-                                    <img src="images/categories/bluzy-koszule-01.png" alt="Bluzy i koszule Sklep Jeans'u" loading="lazy">
+                                    <img src="images/categories/bluzy-koszule-01.png"
+                                         alt="Bluzy i koszule Sklep Jeans'u"
+                                         loading="lazy">
                                 </div>
                                 <div class="product-card-content">
                                     <h3>Bluzy i koszule</h3>
@@ -303,14 +400,17 @@
                                 </div>
                             </a>
                         </div>
+
                         <div class="col-4 col-12-mobile">
                             <a href="oferta/nowosci-sezonowe.html" class="item product-card product-card-link">
                                 <div class="product-card-image">
-                                    <img src="images/categories/nowosci-sezonowe-01.png" alt="Nowości sezonowe Sklep Jeans'u" loading="lazy">
+                                    <img src="images/categories/nowosci-sezonowe-01.png"
+                                         alt="Nowości sezonowe Sklep Jeans'u"
+                                         loading="lazy">
                                 </div>
                                 <div class="product-card-content">
                                     <h3>Nowości sezonowe</h3>
-                                    <p>Nowe kolekcje i dostawy na bieżąco — śledź nas na Facebooku i bądź pierwszy!</p>
+                                    <p>Nowe kolekcje i dostawy na bieżąco — śledź nas na Facebooku i bądź pierwszy.</p>
                                 </div>
                             </a>
                         </div>
@@ -328,11 +428,24 @@
                     </header>
 
                     <div class="about-image">
-                        <img src="images/wnetrze-sklepu.png" alt="Wnętrze sklepu Sklep Jeans'u w Częstochowie — stoisko z jeansami i odzieżą" loading="lazy">
+                        <img src="images/wnetrze-sklepu.png"
+                             alt="Wnętrze sklepu Sklep Jeans'u w Częstochowie — stoisko z jeansami i odzieżą"
+                             loading="lazy">
                     </div>
 
-                    <p><strong>Sklep Jeans'u</strong> to sklep z jeansami i odzieżą codzienną w Częstochowie, w którym znajdziesz coś dla siebie niezależnie od stylu i rozmiaru. Oferujemy <strong>jeansy damskie i męskie</strong>, kurtki jeansowe, spodnie, bluzy i koszule — wszystko w przystępnych cenach i sprawdzonych materiałach.</p>
-                    <p>Nasza <strong>hurtownia jeansu w Częstochowie</strong> działa od lat i niezmiennie stawia na komfort, trwałość i praktyczną modę. Regularnie uzupełniamy ofertę o nowe dostawy — aktualne nowości i promocje znajdziesz na naszym Facebooku. Zapraszamy stacjonarnie!</p>
+                    <p>
+                        <strong>Sklep Jeans'u</strong> to sklep z jeansami i odzieżą codzienną w Częstochowie,
+                        w którym znajdziesz coś dla siebie niezależnie od stylu i rozmiaru. Oferujemy
+                        <strong>jeansy damskie i męskie</strong>, kurtki jeansowe, spodnie, bluzy i koszule —
+                        wszystko w przystępnych cenach i sprawdzonych materiałach.
+                    </p>
+
+                    <p>
+                        Nasza <strong>hurtownia jeansu w Częstochowie</strong> działa od lat i niezmiennie stawia
+                        na komfort, trwałość i praktyczną modę. Regularnie uzupełniamy ofertę o nowe dostawy —
+                        aktualne nowości i promocje znajdziesz na naszym Facebooku. Zapraszamy stacjonarnie.
+                    </p>
+
                     <a href="gallery.html" class="button">
                         <i class="fas fa-images" aria-hidden="true"></i> Zobacz galerię
                     </a>
@@ -342,37 +455,82 @@
             <!-- ========================================
                  5. LOCATIONS
                  ======================================== -->
-            <section id="locations" class="three">
+            <section id="locations" class="locations-section">
                 <div class="container">
                     <header>
                         <h2>Lokalizacje</h2>
+                        <p>Odwiedź nas w jednej z dwóch lokalizacji w Częstochowie.</p>
                     </header>
-                    <p>Zapraszamy do odwiedzenia naszych sklepów stacjonarnych w Częstochowie. <strong>Hurtownia Jeansu</strong> to nasza główna lokalizacja z pełnym asortymentem jeansów i odzieży. Drugi punkt znajdziesz w <strong>Pasażu Sezam</strong> w centrum miasta.</p>
 
                     <div class="location-grid">
-                        <div class="location-card">
-                            <h3><i class="fas fa-location-dot" aria-hidden="true"></i> Hurtownia Jeansu</h3>
-                            <p>Główna lokalizacja sklepu i hurtowni jeansów w Częstochowie — pełny asortyment odzieży casualowej.</p>
-                            <a href="https://www.google.com/maps/place/Hurtownia+Jeansu/@50.8270916,19.1143981,17z/data=!3m1!4b1!4m6!3m5!1s0x4710b5e96d8eb21f:0x42c5e5815fc4b1a2!8m2!3d50.8270916!4d19.1169784!16s%2Fg%2F11gjjgtrjj?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D"
-                               target="_blank" rel="noopener noreferrer" class="button">
-                                <i class="fas fa-map" aria-hidden="true"></i> Otwórz w Google Maps
-                            </a>
-                        </div>
-                        <div class="location-card">
-                            <h3><i class="fas fa-location-dot" aria-hidden="true"></i> Sklep w Pasażu Sezam</h3>
-                            <p>Drugi punkt sprzedaży jeansów i odzieży w Częstochowie — Pasaż Sezam, wygodna lokalizacja w centrum.</p>
-                            <a href="https://www.google.com/maps/place/SEZAM+Pasa%C5%BC+G%C5%82%C3%B3wny/@50.7831369,19.1372866,17z/data=!3m1!4b1!4m6!3m5!1s0x4710b5d0f27906e1:0x9b9553e849333471!8m2!3d50.7831369!4d19.1398669!16s%2Fg%2F11fp3jzx3q?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D"
-                               target="_blank" rel="noopener noreferrer" class="button">
-                                <i class="fas fa-map" aria-hidden="true"></i> Otwórz w Google Maps
-                            </a>
-                        </div>
-                    </div>
+                        <article class="location-card">
+                            <div class="location-icon">
+                                <i class="fas fa-location-dot" aria-hidden="true"></i>
+                            </div>
 
-                    <footer>
-                        <a href="https://share.google/akD8zO9l8JUTnjCDz" target="_blank" rel="noopener noreferrer" class="button">
-                            <i class="fab fa-google" aria-hidden="true"></i> Profil firmy w Google
-                        </a>
-                    </footer>
+                            <h3>Hurtownia Jeansu</h3>
+                            <p>Częstochowa</p>
+
+                            <div class="location-actions">
+                                <a href="https://www.google.com/maps/place/Hurtownia+Jeansu/@50.8270916,19.1143981,17z/data=!3m1!4b1!4m6!3m5!1s0x4710b5e96d8eb21f:0x42c5e5815fc4b1a2!8m2!3d50.8270916!4d19.1169784!16s%2Fg%2F11gjjgtrjj?entry=ttu"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="location-link">
+                                    Otwórz w Google Maps →
+                                </a>
+
+                                <a href="https://share.google/akD8zO9l8JUTnjCDz"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="location-profile-link">
+                                    Profil firmy w Google →
+                                </a>
+                            </div>
+
+                            <div class="location-map">
+                                <iframe
+                                    title="Mapa - Hurtownia Jeansu"
+                                    src="https://www.google.com/maps?q=Hurtownia%20Jeansu%20Cz%C4%99stochowa&output=embed"
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </article>
+
+                        <article class="location-card">
+                            <div class="location-icon">
+                                <i class="fas fa-location-dot" aria-hidden="true"></i>
+                            </div>
+
+                            <h3>Sklep w Pasażu Sezam</h3>
+                            <p>Częstochowa</p>
+
+                            <div class="location-actions">
+                                <a href="https://maps.app.goo.gl/L9MAArUFNyQHT8ze9"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="location-link">
+                                    Otwórz w Google Maps →
+                                </a>
+
+                                <a href="https://share.google/F4jaNhWRgIw6gRedY"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="location-profile-link">
+                                    Profil sklepu w Google →
+                                </a>
+                            </div>
+
+                            <div class="location-map">
+                                <iframe
+                                    title="Mapa - Sklep w Pasażu Sezam"
+                                    src="https://www.google.com/maps?q=Sklep%20Jeans%27u%20Pasa%C5%BC%20Sezam%20Cz%C4%99stochowa&output=embed"
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </section>
 
@@ -384,18 +542,24 @@
                     <header>
                         <h2>Aktualności i Facebook</h2>
                     </header>
-                    <p>Aktualne dostawy, promocje i zdjęcia produktów publikujemy na naszym profilu Facebook. Obserwuj nas, żeby być pierwszym na bieżąco z nowymi kolekcjami jeansów i odzieży casualowej w Częstochowie.</p>
 
-                    <!-- Static news cards — always visible, no external dependency -->
+                    <p>
+                        Aktualne dostawy, promocje i zdjęcia produktów publikujemy na naszym profilu Facebook.
+                        Obserwuj nas, żeby być na bieżąco z nowymi kolekcjami jeansów i odzieży casualowej
+                        w Częstochowie.
+                    </p>
+
                     <div class="news-card-grid">
-
                         <div class="news-card">
                             <div class="news-card-icon">
                                 <i class="fas fa-truck" aria-hidden="true"></i>
                             </div>
                             <h3>Nowe dostawy</h3>
                             <p>Regularnie publikujemy nowe dostawy jeansów i odzieży codziennej. Sprawdź, co właśnie trafiło do sklepu.</p>
-                            <a href="https://www.facebook.com/hurtowniajeansu/" target="_blank" rel="noopener noreferrer" class="button news-card-btn">
+                            <a href="https://www.facebook.com/hurtowniajeansu/"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="button news-card-btn">
                                 <i class="fab fa-facebook-f" aria-hidden="true"></i> Zobacz na Facebooku
                             </a>
                         </div>
@@ -406,7 +570,10 @@
                             </div>
                             <h3>Promocje</h3>
                             <p>Aktualne promocje i okazje cenowe na jeansy i odzież casualową znajdziesz bezpośrednio na profilu.</p>
-                            <a href="https://www.facebook.com/hurtowniajeansu/" target="_blank" rel="noopener noreferrer" class="button news-card-btn">
+                            <a href="https://www.facebook.com/hurtowniajeansu/"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="button news-card-btn">
                                 <i class="fab fa-facebook-f" aria-hidden="true"></i> Zobacz na Facebooku
                             </a>
                         </div>
@@ -417,14 +584,15 @@
                             </div>
                             <h3>Zdjęcia produktów</h3>
                             <p>Najnowsze zdjęcia kolekcji jeansów, kurtek i odzieży pojawiają się w aktualnościach na Facebooku.</p>
-                            <a href="https://www.facebook.com/hurtowniajeansu/" target="_blank" rel="noopener noreferrer" class="button news-card-btn">
+                            <a href="https://www.facebook.com/hurtowniajeansu/"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="button news-card-btn">
                                 <i class="fab fa-facebook-f" aria-hidden="true"></i> Zobacz na Facebooku
                             </a>
                         </div>
-
                     </div>
 
-                    <!-- Primary Facebook CTA card — always works, no iframe needed -->
                     <div class="facebook-static-card">
                         <div class="facebook-static-card-inner">
                             <div class="fsc-icon">
@@ -432,8 +600,11 @@
                             </div>
                             <div class="fsc-content">
                                 <h3>Hurtownia Jeansu na Facebooku</h3>
-                                <p>Wszystkie aktualności, dostawy i promocje publikujemy na bieżąco. Kliknij, żeby otworzyć profil — posty są zawsze aktualne.</p>
-                                <a href="https://www.facebook.com/hurtowniajeansu/" target="_blank" rel="noopener noreferrer" class="button fsc-btn">
+                                <p>Wszystkie aktualności, dostawy i promocje publikujemy na bieżąco. Kliknij, żeby otworzyć profil.</p>
+                                <a href="https://www.facebook.com/hurtowniajeansu/"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="button fsc-btn">
                                     <i class="fab fa-facebook-f" aria-hidden="true"></i> Otwórz profil na Facebooku
                                 </a>
                                 <p class="fsc-note">Profil otwiera się w nowej karcie. Posty i zdjęcia są zawsze dostępne bezpośrednio na Facebooku.</p>
@@ -441,14 +612,18 @@
                         </div>
                     </div>
 
-                    <!-- Optional Facebook Page Plugin iframe (de-emphasized, loads in background) -->
                     <details class="facebook-embed-toggle">
                         <summary>
                             <i class="fab fa-facebook-square" aria-hidden="true"></i>
-                            Pokaż osadzony feed Facebooka (opcjonalnie)
+                            Zobacz nasze posty na Facebooku
                         </summary>
+
                         <div class="facebook-embed-inner">
-                            <p class="facebook-embed-note">Widget Facebooka ładuje się z zewnętrznych serwerów Meta — może nie działać przy blokadach reklam lub ustawieniach prywatności przeglądarki.</p>
+                            <p class="facebook-embed-note">
+                                Widget Facebooka ładuje się z zewnętrznych serwerów Meta. Może nie działać przy blokadach reklam
+                                lub ustawieniach prywatności przeglądarki.
+                            </p>
+
                             <div class="facebook-iframe-wrapper">
                                 <iframe
                                     title="Feed Facebooka — Hurtownia Jeansu"
@@ -464,7 +639,6 @@
                             </div>
                         </div>
                     </details>
-
                 </div>
             </section>
 
@@ -478,59 +652,94 @@
                     </header>
 
                     <div class="contact-highlight">
-                        <p><strong>Najłatwiej skontaktować się przez e-mail lub Facebooka, albo odwiedzić nas stacjonarnie w Częstochowie.</strong></p>
+                        <p>
+                            <strong>Najłatwiej skontaktować się telefonicznie, przez e-mail lub Facebooka, albo odwiedzić nas stacjonarnie w Częstochowie.</strong>
+                        </p>
                     </div>
 
                     <div class="contact-card-grid">
                         <div class="contact-card">
-                            <i class="fas fa-envelope" aria-hidden="true"></i>
-                            <h3>E-mail</h3>
-                            <a href="mailto:kontakt@sklepjeans.pl">kontakt@sklepjeans.pl</a>
-                        </div>
-                        <div class="contact-card">
                             <i class="fas fa-phone" aria-hidden="true"></i>
                             <h3>Telefon</h3>
-                            <p><em>do uzupełnienia</em></p>
+                            <a href="tel:+48601505037">+48 601 505 037</a>
                         </div>
+
+                        <div class="contact-card">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <h3>E-mail</h3>
+                            <a href="mailto:tomaz.ciura037@gmail.com">tomaz.ciura037@gmail.com</a>
+                        </div>
+
                         <div class="contact-card">
                             <i class="fab fa-facebook-f" aria-hidden="true"></i>
                             <h3>Facebook</h3>
-                            <a href="https://www.facebook.com/hurtowniajeansu/" target="_blank" rel="noopener noreferrer">Napisz na Facebooku</a>
+                            <a href="https://www.facebook.com/hurtowniajeansu/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Napisz na Facebooku
+                            </a>
                         </div>
+
                         <div class="contact-card">
                             <i class="fab fa-google" aria-hidden="true"></i>
                             <h3>Google</h3>
-                            <a href="https://share.google/akD8zO9l8JUTnjCDz" target="_blank" rel="noopener noreferrer">Profil w Google</a>
+                            <a href="https://share.google/akD8zO9l8JUTnjCDz"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Profil w Google
+                            </a>
                         </div>
+
                         <div class="contact-card">
                             <i class="fas fa-location-dot" aria-hidden="true"></i>
                             <h3>Hurtownia Jeansu</h3>
                             <a href="https://www.google.com/maps/place/Hurtownia+Jeansu/@50.8270916,19.1143981,17z/data=!3m1!4b1!4m6!3m5!1s0x4710b5e96d8eb21f:0x42c5e5815fc4b1a2!8m2!3d50.8270916!4d19.1169784!16s%2Fg%2F11gjjgtrjj?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D"
-                               target="_blank" rel="noopener noreferrer">Otwórz w Google Maps</a>
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Otwórz w Google Maps
+                            </a>
                         </div>
+
                         <div class="contact-card">
                             <i class="fas fa-location-dot" aria-hidden="true"></i>
                             <h3>Pasaż Sezam</h3>
-                            <a href="https://www.google.com/maps/place/SEZAM+Pasa%C5%BC+G%C5%82%C3%B3wny/@50.7831369,19.1372866,17z/data=!3m1!4b1!4m6!3m5!1s0x4710b5d0f27906e1:0x9b9553e849333471!8m2!3d50.7831369!4d19.1398669!16s%2Fg%2F11fp3jzx3q?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D"
-                               target="_blank" rel="noopener noreferrer">Otwórz w Google Maps</a>
+                            <a href="https://maps.app.goo.gl/L9MAArUFNyQHT8ze9"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Otwórz w Google Maps
+                            </a>
                         </div>
                     </div>
 
-                    <div class="opening-hours">
-                        <p><strong>Godziny otwarcia:</strong> <em>do uzupełnienia</em></p>
+                    <div class="opening-hours-highlight">
+                        <div class="opening-hours-icon">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                        </div>
+                        <div class="opening-hours-text">
+                            <strong>Godziny otwarcia</strong>
+                            <span>pon.–pt. 10:00–17:00</span>
+                            <span>sob. 10:00–14:00</span>
+                        </div>
                     </div>
                 </div>
             </section>
 
-        </div><!-- end #main -->
+        </div>
 
         <!-- Footer -->
         <div id="footer">
             <ul class="copyright">
                 <li>&copy; 2026 Sklep Jeans'u Częstochowa. Wszelkie prawa zastrzeżone.</li>
-                <li><a href="https://www.facebook.com/hurtowniajeansu/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li>
+                    <a href="https://www.facebook.com/hurtowniajeansu/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Facebook
+                    </a>
+                </li>
                 <li><a href="gallery.html">Galeria</a></li>
-                <li><a href="mailto:kontakt@sklepjeans.pl">kontakt@sklepjeans.pl</a></li>
+                <li><a href="mailto:tomaz.ciura037@gmail.com">tomaz.ciura037@gmail.com</a></li>
+                <li><a href="tel:+48601505037">+48 601 505 037</a></li>
             </ul>
         </div>
 
